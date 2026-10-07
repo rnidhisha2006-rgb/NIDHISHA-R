@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Gallery - Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: #f5e6d3;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            width: 320px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #6b3e26;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: #6b3e26;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>🎨 Art Gallery</h1>
+
+        <p>Welcome! Please login</p>
+
+        <input type="text" placeholder="Enter Username">
+
+        <input type="password" placeholder="Enter Password">
+
+        <br>
+
+        <button onclick="login()">Login</button>
+
+<script>
+    function login() {
+        window.location.href = "welcome.html";
+    }
+</script>
+
+    </div>
+
+</body>
+</html>

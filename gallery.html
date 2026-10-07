@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Art Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎨 My Art Gallery</h1>
+        <p>Explore beautiful artworks</p>
+    </header>
+
+    <main>
+        <div class="art-card" onclick="showArtwork(this)">
+    <img src="images/nature.jpeg" alt="Nature Art">
+    <h2>Nature</h2>
+    <p>Beautiful nature artwork</p>
+</div>
+
+<div class="art-card" onclick="showArtwork(this)">
+    <img src="images/sunset.jpeg" alt="Sunset Art">
+    <h2>Sunset</h2>
+    <p>A peaceful sunset painting</p>
+</div>
+
+<div class="art-card" onclick="showArtwork(this)">
+    <img src="images/ocean.jpeg" alt="Ocean Art">
+    <h2>Ocean</h2>
+    <p>Beautiful ocean artwork</p>
+</div>
+
+<div class="art-card" onclick="showArtwork(this)">
+    <img src="images/night.jpeg" alt="Night Art">
+    <h2>Night</h2>
+    <p>A beautiful night artwork</p>
+</div>
+
+    </main>
+
+<div id="artModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+
+        <button onclick="closeModal()">Close</button>
+    </div>
+<div id="artModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeArtwork()">✕</button>
+
+        <img id="modalImage" src="" alt="Artwork">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
